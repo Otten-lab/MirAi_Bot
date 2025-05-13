@@ -23,7 +23,7 @@ import java.util.Map;
 public class SalesAnalyticsBot extends TelegramLongPollingBot {
     private final String botToken;
     private final String botUsername;
-    private final String spreadsheetId = "1cLE2s2smwRBDa8ozngi6dcnZpGP-XiylubS5r4ygbAc";
+    private final String spreadsheetId = System.getenv("SPREADSHEET_ID");
 
     private final GoogleSheetsService sheetsService;
 
